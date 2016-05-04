@@ -1,0 +1,31 @@
+{
+  "name" : "dotkernel/dot-template-expressive",
+  "description" : "Expressive implementation for Zend Expressive",
+  "version" : "0.1",
+  "require" : {
+    "php" : ">=5.4",
+    "zendframework/zend-expressive-template" : "^1.0"
+  },
+  "repositories" : [ {
+    "type" : "vcs",
+    "url" : "https://github.com/dotkernel/dot-template-expressive"
+  } ],
+  "license" : "MIT",
+  "keywords" : [ "expressive templating system", "dot template expressive", "dotkernel templating expressive", "templating system" ],
+  "autoload-dev" : {
+    "psr-4" : {
+      "DotKernel\\Expressive\\DotRenderer\\"  : "tests/"
+    }
+  },
+  "minimum-stability" : "dev",
+  "autoload" : {
+    "psr-4" : {
+      "DotKernel\\Expressive\\DotRenderer\\" : "src/"
+    }
+  },
+  "files" : [ "src/DotRenderer.php", "TemplateAdapter.php" ],
+  "authors" : [ {
+    "name" : "DotKernel Team",
+    "email" : "team@dotkernel.com"
+  } ]
+}
